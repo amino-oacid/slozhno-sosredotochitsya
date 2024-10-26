@@ -50,12 +50,12 @@
 
 .header__decor-element {
   position: absolute;
+  visibility: var(--decor-element-visibility);
   display: flex;
   align-items: center;
   gap: 10px;
   inset-inline-end: 20px;
   inset-block-start: 10px;
-  visibility: var(--decor-element-visibility);
 }
 
 .header__decor-element::before {
@@ -86,8 +86,8 @@
 }
 
 .header__theme-menu-button {
-  padding: 2px 13px;
   border: none;
+  padding: 2px 13px;
   outline: 1px solid transparent;
   color: var(--accent-color);
   font-size: var(--font-size);
@@ -187,7 +187,7 @@
 .gallery,
 .gallery__list {
   display: grid;
-  gap: 10px;
+  gap: clamp(10px, 0.029rem + 2.545vw, 20px);
 }
 
 .gallery__picture {
