@@ -1,12 +1,55 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
+/*Стили для светлой темы при принудительном переключении*/
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --accent-color: #353430;
+  --accent-color-with-opacity: #32312d66;
+  
+  --accent-background-color: #FF8DCB;
+  --background-color: #FFF1F7;
+
+  --title-color: #FFC2E6;
+  --sub-title-color: #353430;
+  --main-text-color: #353430;
+  --text-color-with-background: #353430;
+
+  --background-image: url(../images/cover-image-light.png);
+  --title-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --font-family: 'IBM Plex Mono';
+  --font-size: 18px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --line-height: 23px;
+  --title-line-height: 82.5%;
+  --text-shadow: 2px 2px 0 var(--accent-background-color);
+  --text-shadow-x2: 4px 4px 0 var(--accent-background-color);
+  --decor-element-visibility: hidden;
+}
+
+/*Стили для темной темы по предпочтениям пользователя*/
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #353430;
+    --accent-color-with-opacity: #32312d66;
+    
+    --accent-background-color: #FF8DCB;
+    --background-color: #FFF1F7;
+  
+    --title-color: #FFC2E6;
+    --sub-title-color: #353430;
+    --main-text-color: #353430;
+    --text-color-with-background: #353430;
+  
+    --background-image: url(../images/cover-image-light.png);
+    --title-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --title-font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --font-family: 'IBM Plex Mono';
+    --font-size: 18px;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height: 23px;
+    --title-line-height: 82.5%;
+    --text-shadow: 2px 2px 0 var(--accent-background-color);
+    --text-shadow-x2: 4px 4px 0 var(--accent-background-color);
+    --decor-element-visibility: hidden;
+  }
 }

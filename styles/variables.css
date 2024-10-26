@@ -1,4 +1,27 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+/*Переменные для темной темы*/
+:root {
+  --accent-color: #FF0070;
+  --accent-color-with-opacity: #FF007066;
+  
+  --accent-background-color: #FF0070;
+  --background-color: #000028;
+
+  --title-color: #DB00FF;
+  --sub-title-color: #FF0070;
+  --main-text-color: #F1B2CE;
+  --text-color-with-background: #000028;
+
+  --background-image: url(../images/cover-image-dark.png);
+  --title-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --font-family: 'IBM Plex Mono';
+  --font-size: 18px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --line-height: 23px;
+  --title-line-height: 82.5%;
+  --text-shadow: 2px 2px 0 var(--accent-background-color);
+  --text-shadow-x2: 4px 4px 0 var(--accent-background-color);
+  --decor-element-visibility: visible;
+}
+
