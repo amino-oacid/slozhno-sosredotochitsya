@@ -298,7 +298,8 @@
 
   .topic__list--another-grid-position {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 314px); /*Свойство для переноса карточки при добавлении новой.*/
+    grid-template-columns: repeat(3, 1fr); /*Чтобы вмещалось только 3 карточки, новые спускались на след.строку*/
+    gap: 20px;
   }
 
   .footer {
